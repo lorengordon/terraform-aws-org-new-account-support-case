@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Enable Enterprise support on a new account."""
+
 from argparse import ArgumentParser, RawDescriptionHelpFormatter
 import os
 from string import Template
@@ -7,7 +8,6 @@ import sys
 
 from aws_lambda_powertools import Logger
 import boto3
-
 
 LOG_LEVEL = os.environ.get("LOG_LEVEL", "info")
 
